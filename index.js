@@ -123,3 +123,5 @@ app.listen(5000, () => {
 })
 app.set("json spaces", 1); 
 app.use(monitor())
+
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
